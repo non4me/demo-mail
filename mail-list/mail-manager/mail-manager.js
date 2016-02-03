@@ -4,7 +4,7 @@
   angular.module('myMail')
     .directive('mailManager', function() {
       return {
-        templateUrl: 'mail-manager.html',
+        templateUrl: 'mail-list/mail-manager/mail-manager.html',
         scope: false,
         require: '^mailList',
         link: function(scope, element, attr, mailListCtrl) {
