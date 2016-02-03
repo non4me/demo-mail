@@ -5,7 +5,7 @@
     .directive('user', function() {
       return {
         restrict: 'E',
-        templateUrl: 'user.html',
+        templateUrl: 'user/user.html',
         scope: {
           data: '='
         },

@@ -4,7 +4,7 @@
   angular.module('myMail')
     .directive('userProfile', function() {
       return {
-        templateUrl: 'user-profile.html',
+        templateUrl: 'user/user-profile/user-profile.html',
         restrict: 'E',
         replace: true,
         scope: {

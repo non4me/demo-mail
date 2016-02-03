@@ -4,7 +4,7 @@
   angular.module('myMail')
     .directive('mailList', function() { 
       return {
-        templateUrl: 'mail-list.html',
+        templateUrl: 'mail-list/mail-list.html',
         replace: true,
         scope: {
           data: '=',
