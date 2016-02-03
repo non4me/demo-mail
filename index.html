@@ -1,1 +1,36 @@
-test
+<!DOCTYPE html> 
+<html ng-app="myMail">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mail box</title>
+    <link data-require="bootstrap-css@*" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.8/angular.js" data-semver="1.4.8"></script>
+    <script>
+      angular.module('myMail', []);
+    </script>
+    <script src="app.js"></script>
+    
+    <!-- services -->
+    <script src="_/services/local-store.js"></script>
+    <script src="_/services/api-mail.js"></script>
+    <script src="_/services/api-user.js"></script>
+    
+    <!-- filter -->
+    <script src="_/filters/capitalize.js"></script>
+    
+    <!-- directives -->
+    <script src="box-list/box-list.js"></script>
+    <script src="mail-list/mail-list.html"></script>
+    <script src="mail-list/mail-manager/mail-manager.js"></script>
+    <script src="user/user.js"></script>
+    <script src="user/user-profile/user-profile.js"></script>
+  </head>
+
+  <body class="app">
+    
+    <mail-app></mail-app>
+  
+  </body> 
+</html>

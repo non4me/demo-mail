@@ -1,0 +1,19 @@
+{
+  "name": "demo-mail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/non4me/demo-mail.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/non4me/demo-mail/issues"
+  },
+  "homepage": "https://github.com/non4me/demo-mail#readme"
+}
