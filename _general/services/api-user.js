@@ -4,7 +4,7 @@
   angular.module('myMail')
     .factory('apiUser', function($q, $http, store) { 
       
-      var restPoint = 'users.json',
+      var restPoint = '.mocks/users.json',
           cache = {};
 
       return {

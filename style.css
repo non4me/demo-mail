@@ -14,7 +14,6 @@ html, body {
   height: calc(100% - 60px);
 }
 
-
 /* top */
 .app .top {
   background-color: #ccc;
@@ -25,6 +24,9 @@ html, body {
   color: #fff;
 }
 
+.app .nav {
+  margin: 15px 15px 0 5px;
+}
 
 /* box list */
 .app .main .box-list {
@@ -62,7 +64,6 @@ html, body {
   font-weight: 600;
 }
 
-
 /* mail list */
 .app .main .mail-list .mail {
   cursor: pointer;
@@ -71,7 +72,7 @@ html, body {
   border-bottom: 1px solid #CCC;
 }
 
-.app .main .mail-list .mail-ico.glyphicon-eye-close  {
+.app .main .mail-list .mail-ico.glyphicon-eye-close {
   color: #777;
 }
 
@@ -79,29 +80,28 @@ html, body {
   color: #ddd;
 }
 
-.app .main .mail-list .mail-header{
+.app .main .mail-list .mail-header {
   font-weight: 500;
   color: #40A4C1;
 }
 
-.app .main .mail-list .mail-header:hover{
+.app .main .mail-list .mail-header:hover {
   font-weight: 600;
   color: #40A4C1;
 }
 
-.app .main .mail-list .mail.selected .mail-header{
+.app .main .mail-list .mail.selected .mail-header {
   font-weight: 600;
   color: #40A4C1;
 }
 
-.app .main .mail-list .mail .mail-manger{
-  display:none;
+.app .main .mail-list .mail .mail-manger {
+  display: none;
 }
 
-.app .main .mail-list .mail.selected .mail-manger{
-  display:block;
+.app .main .mail-list .mail.selected .mail-manger {
+  display: block;
 }
-
 
 .app .main .mail-list {
   border-right: 2px #ccc solid;
@@ -115,62 +115,63 @@ html, body {
   margin: 5px 0 20px;
 }
 
+.app .main .mail-manger button {
+  margin: 0 2px;
+}
+
 @media (min-width: 770px) {
   .app .main .mail-list {
     height: calc(100%);
   }
 }
 
-
 .app .main .show-mail {
   margin-left: 20px;
 }
 
-
-
 /* user list */
-.app .top .user  {
+.app .top .user {
   position: absolute;
   right: 10px;
   margin-top: -3px;
-  z-index:1000;
+  z-index: 1000;
 }
 
-.app .top .user .user-info{
+.app .top .user .user-info {
   text-align: right;
   border: 1px dotted #777;
   background-color: #DDD;
   padding: 7px;
   border-radius: 5px;
   cursor: pointer;
-  
+
 }
 
-.app .top .user .user-info img{
+.app .top .user .user-info img {
   border-radius: 50%;
   border: 1px solid #777;
 }
 
-.app .top .user .user-info .glyphicon{
+.app .top .user .user-info .glyphicon {
   color: #AAA;
 }
 
-.app .top .user .user-info .edit-link{
-    display: inline-block;
-    position: absolute;
-    right: 46px;
-    margin-top: -8px;
+.app .top .user .user-info .edit-link {
+  display: inline-block;
+  position: absolute;
+  right: 46px;
+  margin-top: -8px;
 }
 
-.app .top .user .users-list{
-    margin-top: 20px;
+.app .top .user .users-list {
+  margin-top: 20px;
 }
 
-.app .top .user .user-in-list{
-    text-align: left;
-    border-top: 1px dotted #777;
-    cursor: pointer;
-    padding: 5px;
+.app .top .user .user-in-list {
+  text-align: left;
+  border-top: 1px dotted #777;
+  cursor: pointer;
+  padding: 5px;
 }
 
 

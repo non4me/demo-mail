@@ -7,15 +7,15 @@
       {{userCtrl.data.selectedUser.name.last | capitalize}}
     </span>
     <span class="glyphicon {{ userCtrl.listOpen ? 'glyphicon-triangle-bottom' : 'glyphicon-triangle-left'}}"></span>
-    
+
     <br>
     <a href class="edit-link" ng-click="userCtrl.openProfile()" ng-show="userCtrl.listOpen">
       Edit profile
     </a>
-    
+
     <div class="users-list" ng-show="userCtrl.listOpen">
-      <div class="user-in-list" ng-repeat="user in userCtrl.data.users | filter:userCtrl.excludeUser" 
-      ng-click="userCtrl.selectUser(user)">
+      <div class="user-in-list" ng-repeat="user in userCtrl.data.users | filter:userCtrl.excludeUser"
+           ng-click="userCtrl.selectUser(user)">
         <img ng-src="{{user.picture.thumbnail}}" width="30" />
         <span class="title">{{user.name.title}}</span>.
         <span class="name">
@@ -23,8 +23,8 @@
           {{user.name.last | capitalize}}
         </span>
       </div>
+    </div>
   </div>
-  </div>
-  
-  
+
+
 </div>

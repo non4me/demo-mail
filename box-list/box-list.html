@@ -1,8 +1,8 @@
 <div class="box-list">
-  <a class="box-name" 
-  ng-class="{'selected': boxList.isSelected(box.id) }"
-       ng-repeat="box in boxList.data.boxes | orderBy: 'sort'"
-       ng-click="boxList.setSelected(box.id)" href>
+  <a class="box-name"
+     ng-class="{'selected': boxList.isSelected(box.id) }"
+     ng-repeat="box in boxList.data.boxes | orderBy: 'sort'"
+     ng-click="boxList.setSelected(box.id)" href>
     <span class="glyphicon glyphicon-{{box.ico}}" style="color:#777"></span>
     <span class="mail-counter">{{ boxList.getMailCount(box.id) }}</span>
     {{ box.name }}

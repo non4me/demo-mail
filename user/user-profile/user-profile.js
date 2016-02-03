@@ -1,29 +1,27 @@
 (function() {
   'use strict';
-  
+
   angular.module('myMail')
-    .directive('userProfile', function() {
-      return {
-        templateUrl: 'user/user-profile/user-profile.html',
-        restrict: 'E',
-        replace: true,
-        scope: {
-          data: '='
-        },
-        bindToController: true,
-        controller: function(apiMail) { 
-          var vm = this;
-          
-          vm.isSelected = function(id) {
-            return vm.data.selectedBoxId === id;
-          }
-          
-          vm.setSelected = function(id) {
-            vm.data.selectedBoxId = id;
-          }
-          
-        },
-        controllerAs: 'boxList'
-      };
-  });
+      .directive('userProfile', function() {
+        return {
+          templateUrl: 'user/user-profile/user-profile.html',
+          restrict: 'E',
+          replace: true,
+          scope: {},
+          controller: function(apiMail, sharedConfig) {
+
+            this.data = sharedConfig;
+
+            this.isSelected = function(id) {
+              return this.data.selectedBoxId === id;
+            };
+
+            this.setSelected = function(id) {
+              this.data.selectedBoxId = id;
+            };
+
+          },
+          controllerAs: 'boxList'
+        };
+      });
 })();
