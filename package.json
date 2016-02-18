@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/non4me/demo-mail/issues"
   },
-  "homepage": "https://github.com/non4me/demo-mail#readme"
+  "homepage": "https://github.com/non4me/demo-mail#readme",
+  "dependencies": {
+    "angular-ui-router": "^0.2.17"
+  }
 }
