@@ -1,0 +1,185 @@
+html, body {
+  height: calc(100%);
+}
+
+.zero-margin {
+  margin: 0;
+}
+
+.zero-padding {
+  padding: 0;
+}
+
+.main {
+  height: calc(100% - 60px);
+}
+
+.app li[role="presentation"] {
+  cursor: pointer;
+}
+
+.app .main li[role="presentation"] {
+  cursor: none;
+}
+
+/* top */
+.app .top {
+  background-color: #ccc;
+  padding: 10px;
+}
+
+.app .top h1 {
+  color: #fff;
+}
+
+.app .nav {
+  margin: 15px 15px 0 5px;
+}
+
+/* box list */
+.app .main .box-list {
+  background-color: #eaeaea;
+  border-right: 2px #ccc solid;
+  margin: 0;
+  padding: 10px;
+}
+
+.app .main .box-list .mail-counter {
+  display: inline;
+  color: #FFF;
+  padding: 0 4px;
+  margin: 0 0 5px 5px;
+  border: 1px solid #CCC;
+  font-size: 11px;
+  background-color: #CCC;
+}
+
+@media (min-width: 770px) {
+  .app .main .box-list {
+    height: calc(100%);
+  }
+}
+
+.app .main .box-list .box-name {
+  display: block;
+  margin: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 1px #ccc dotted;
+}
+
+.app .main .box-list .selected {
+  font-weight: 600;
+}
+
+/* mail list */
+.app .main .mail-list .mail {
+  cursor: pointer;
+  min-height: 40px;
+  padding: 10px;
+  border-bottom: 1px solid #CCC;
+}
+
+.app .main .mail-list .mail-ico.glyphicon-eye-close {
+  color: #777;
+}
+
+.app .main .mail-list .mail-ico.glyphicon-eye-open {
+  color: #ddd;
+}
+
+.app .main .mail-list .mail-header {
+  font-weight: 500;
+  color: #40A4C1;
+}
+
+.app .main .mail-list .mail-header:hover {
+  font-weight: 600;
+  color: #40A4C1;
+}
+
+.app .main .mail-list .mail.selected .mail-header {
+  font-weight: 600;
+  color: #40A4C1;
+}
+
+.app .main .mail-list .mail .mail-manger {
+  display: none;
+}
+
+.app .main .mail-list .mail.selected .mail-manger {
+  display: block;
+}
+
+.app .main .mail-list {
+  border-right: 2px #ccc solid;
+  padding-right: 10px;
+  height: calc(100% - 150px);
+  overflow-y: auto;
+}
+
+.app .main .mail-list h2 {
+  color: #3364A2;
+  margin: 5px 0 20px;
+}
+
+.app .main .mail-manger button {
+  margin: 0 2px;
+}
+
+@media (min-width: 770px) {
+  .app .main .mail-list {
+    height: calc(100%);
+  }
+}
+
+.app .main .show-mail {
+  margin-left: 20px;
+}
+
+/* user list */
+.app .top .user {
+  position: absolute;
+  right: 10px;
+  margin-top: -3px;
+  z-index: 1000;
+}
+
+.app .top .user .user-info {
+  text-align: right;
+  border: 1px dotted #777;
+  background-color: #DDD;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.app .top .user .user-info img {
+  border-radius: 50%;
+  border: 1px solid #777;
+}
+
+.app .top .user .user-info .glyphicon {
+  color: #AAA;
+}
+
+.app .top .user .user-info .edit-link {
+  display: inline-block;
+  position: absolute;
+  right: 46px;
+  margin-top: -8px;
+}
+
+.app .top .user .users-list {
+  margin-top: 20px;
+}
+
+.app .top .user .user-in-list {
+  text-align: left;
+  border-top: 1px dotted #777;
+  cursor: pointer;
+  padding: 5px;
+}
+
+

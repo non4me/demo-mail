@@ -1,0 +1,28 @@
+<div class="app">
+  <div class="row top">
+    <h1 class="logo zero-margin col-xs-6">
+      <img src='img/logo.png' width=50>
+      myMail
+    </h1>
+    <div class="user-name col-xs-6 text-right">
+      <user></user>
+    </div>
+  </div>
+
+  <ul class="nav nav-tabs">
+    <li role="presentation" ng-class="{active: mainCtrl.currentState === 'mailUser.messages'}">
+      <a ng-click ="mainCtrl.setTab('mailUser.messages', {boxId:1})">Messages</a>
+    </li>
+    <li role="presentation" ng-class="{active: mainCtrl.currentState === 'mailUser.contacts'}">
+      <a ng-click ="mainCtrl.setTab('mailUser.contacts')">Contacts</a>
+    </li>
+  </ul>
+
+  <div class="main row zero-margin zero-padding">
+
+    <ui-view>
+      <context-loader></context-loader>
+    </ui-view>
+
+  </div>
+</div>

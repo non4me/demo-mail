@@ -1,0 +1,25 @@
+{
+  "name": "demo-mail",
+  "description": "",
+  "main": "app/index.html",
+  "authors": [
+    "VladimirTroyanenko <vladimir1@javascript.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/non4me/demo-mail",
+  "moduleType": [
+    "es6"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-css-only": "*",
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.2.18"
+  }
+}

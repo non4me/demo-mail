@@ -1,0 +1,29 @@
+/* line 1, loader.scss */
+.auth-form {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 11, loader.scss */
+.auth-form .backdrop {
+  position: absolute;
+  height: calc(100%);
+  width: 100%;
+  background-color: #aeacad;
+  opacity: 0.9;
+  z-index: 1000;
+  top: 0;
+}
+
+.auth-form .form-group {
+  background-color: #0b97c4;
+  top: 43%;
+  position: absolute;
+  left: 34%;
+  padding: 15px;
+}

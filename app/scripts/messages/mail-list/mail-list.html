@@ -1,0 +1,21 @@
+<div class="mail-list">
+  <h2 class="zero-margin">{{ ctrlMailList.data.selectedBox }}</h2>
+
+  <div ng-repeat="message in ctrlMailList.data.messages | filter:ctrlMailList.boxFilter | orderBy: 'id'">
+    <div class="mail"
+         ng-class="{'selected': ctrlMailList.isSelected(message.id) }"
+         ng-click="ctrlMailList.setSelected(message)" >
+
+      <mail-manager data="ctrlMailList.data"></mail-manager>
+
+      <span class="mail-ico glyphicon {{message.opened ? 'glyphicon-eye-open' : 'glyphicon-eye-close'}}"></span>
+
+      <span class="mail-header">{{ message.title }}</span>
+
+      <div class="show-mail" ng-show="ctrlMailList.isSelected(message.id)">
+        {{ message.body }}
+      </div>
+    </div>
+  </div>
+
+</div>
