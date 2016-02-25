@@ -1,0 +1,12 @@
+.contact-list {
+  padding: 20px 100px;
+}
+
+.contact-list .contact {
+  padding: 10px;
+  border-bottom: 1px dotted #CCCCCC;
+}
+
+.contact-list .contact .contact-name{
+  font-weight: 700;
+}

@@ -1,0 +1,9 @@
+<div class="auth-form" ng-if="ctrlAuthForm.showLogIn">
+  <div class="backdrop">
+    <div class="form-group">
+      <input ng-model="login" placeholder="Login (admin)">
+      <input ng-model="password" placeholder="Password (admin)">
+      <button ng-click="doLogin(login, password)">login</button>
+    </div>
+  </div>
+</div>

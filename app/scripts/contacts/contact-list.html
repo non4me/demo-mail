@@ -1,0 +1,15 @@
+<div class="contact-list">
+
+  <div ng-repeat="contact in ctrlContactList.data.contacts | orderBy: 'name'">
+    <div class="contact">
+
+      <span class="contact-name">{{::contact.name }} aka {{::contact.username }}</span><br>
+      <span class="contact-email">{{::contact.email }}</span>
+
+      <div class="show-mail" ng-show="ctrlContactList.isSelected(message.id)">
+        {{ message.body }}
+      </div>
+    </div>
+  </div>
+
+</div>
