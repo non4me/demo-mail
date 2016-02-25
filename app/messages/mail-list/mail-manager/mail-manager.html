@@ -1,8 +1,0 @@
-<div class="mail-manger text-right">
-  <button ng-repeat="box in managerCtrl.boxes"
-          title="Move to {{box.name}}"
-          ng-click="managerCtrl.moveToBox(box.id, $event)"
-          ng-show="managerCtrl.selectedBoxId !== box.id">
-    <span class="glyphicon glyphicon-{{box.ico}}"></span>
-  </button>
-</div>
